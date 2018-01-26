@@ -13,10 +13,8 @@
 #   rake "some:great:rake:task"
 # end
 #
-# every 4.days do
-#   runner "AnotherModel.prune_old_records"
+# every :hour do
+#   rake 'syndicate:eventbrite'
 # end
-
-
 
 # Learn more: http://github.com/javan/whenever
