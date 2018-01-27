@@ -13,8 +13,8 @@
 #   rake "some:great:rake:task"
 # end
 #
-# every :hour do
-#   rake 'syndicate:eventbrite'
-# end
+every :hour do
+  rake 'syndicate:eventbrite'
+end
 
 # Learn more: http://github.com/javan/whenever
