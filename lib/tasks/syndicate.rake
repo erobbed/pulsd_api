@@ -3,7 +3,7 @@ namespace :syndicate do
   task eventbrite: :environment do
     url = 'https://www.eventbriteapi.com/v3/events/'
     events = Event.select { |e| e.created_at > Time.now - 3600 }
-    events.each do |_event|
+    events.each do |event|
       body = {
         headers: {
           Authorization: "Bearer #{ENV['eventbrite']}"
